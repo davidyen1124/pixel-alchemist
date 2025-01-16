@@ -2,6 +2,14 @@
 
 > _Unlike certain AI companies that shall remain nameless (cough_ Pear.ai _cough), we actually write our own code and respect open source!_
 
+## ✨ Live Demo
+
+Check out the magic at [https://davidyen1124.github.io/pixel-alchemist/](https://davidyen1124.github.io/pixel-alchemist/)
+
+## 📸 Screenshot
+
+![Video Palette Generator in action](assets/screenshot.png)
+
 ## What is this?
 
 A totally legitimate, definitely-not-stolen tool that extracts color palettes from your videos. Yes, we actually wrote this ourselves, shocking right? In an era where some companies think "open source" means "free real estate", we're keeping it real.
