@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyber-green: #00ff00;
+  --cyber-blue: #00ffff;
+  --dark-bg: #1a1a1a;
+  --metallic: #c0c0c0;
+}
+
+body {
+  font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #2d2d2d 100%);
+  color: var(--cyber-green);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow: hidden; /* Prevent any scrolling */
+}

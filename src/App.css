@@ -1,0 +1,68 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Y2K decorative elements */
+.app::before,
+.app::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, var(--cyber-blue), transparent);
+  opacity: 0.1;
+  filter: blur(40px);
+  animation: float 10s infinite alternate;
+  z-index: -1;
+}
+
+.app::before {
+  top: -100px;
+  left: -100px;
+}
+
+.app::after {
+  bottom: -100px;
+  right: -100px;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(20px, 20px) rotate(45deg);
+  }
+}
+
+/* Retro title */
+.app h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--cyber-green);
+  text-shadow: 0 0 5px var(--cyber-green), 0 0 10px var(--cyber-green),
+    0 0 20px var(--cyber-blue);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 5px var(--cyber-green), 0 0 10px var(--cyber-green),
+      0 0 20px var(--cyber-blue);
+  }
+  50% {
+    text-shadow: 0 0 10px var(--cyber-green), 0 0 20px var(--cyber-green),
+      0 0 40px var(--cyber-blue);
+  }
+}
